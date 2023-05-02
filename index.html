@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details With fetch Api</title>
+</head>
+<style>
+    .container{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+        background-color: aquamarine;
+    }
+    .product-details{
+        text-align: center;
+        
+        
+    }
+    #product-id{
+        color: rgb(81, 0, 255);
+    }
+    #product-description{
+        width: 400px;
+        color: blueviolet;
+        box-shadow: 5px 5px 5px gray;
+       
+    }
+     .contain{
+        display: flex;
+        gap: 10px;
+        background-color:   rgb(217, 216, 216);
+        font-weight: 500;
+        padding: 3px;
+     }
+
+</style>
+<body>
+     <div class="container" id="container">
+        <template id="product-details-template">
+            
+        <div class="product-detail" id="product-details">
+            <h4 id="product-id">1</h4>
+            <h4 id="product-title">....</h4>
+            <img id="product-img" src="https://via.placeholder.com/200" alt="">
+            <p id="product-description">...</p> 
+            <div class="contain">            
+           
+            <p id="product-price"></p>
+            <p id="product-discountpercentage"></p>
+            <p id="product-rating"></p>
+            <p id="product-brand"></p>
+            <p id="product-category"></p>
+            <!-- <div id="product-images"></div> -->
+        </div>
+        </div>
+        </template>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
